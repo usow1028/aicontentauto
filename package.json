@@ -1,0 +1,24 @@
+{
+  "name": "aicontentauto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild aicontentauto.tsx --bundle --outfile=bundle.js --format=esm --jsx=automatic --loader:.tsx=tsx --target=es2018",
+    "start": "serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.6",
+    "serve": "^14.2.4",
+    "tailwindcss": "^4.1.11"
+  }
+}

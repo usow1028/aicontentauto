@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import ReactDOM from "react-dom/client";
 import { ChevronDown, ChevronUp, Play, Download, Loader2, TrendingUp, FileText, Image, Video, Sparkles } from 'lucide-react';
 
 const AIContentGenerator = () => {
@@ -380,3 +381,8 @@ const AIContentGenerator = () => {
 };
 
 export default AIContentGenerator;
+const rootEl = document.getElementById("root");
+if (rootEl) {
+  ReactDOM.createRoot(rootEl).render(<AIContentGenerator />);
+}
+
